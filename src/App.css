@@ -1,0 +1,39 @@
+/* Header Styling */
+.header{
+  height: 100px;
+  width: 100%;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f8f8f8
+}
+.btns{
+  float:right;
+  display: inline-block;
+}
+.appName{
+  display: inline-block;
+  margin-right: 20px;
+}
+.logo {
+  height: 50px;
+  border-radius: 100%;
+}
+.signupBtn{
+  margin-right: 10px;
+}
+
+/* Body Styling */
+.body {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.listH3{
+  display: inline-block;
+}
+.listBtn{
+  display: inline-block;
+  margin-left: 10px;
+}
