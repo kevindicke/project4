@@ -40,12 +40,25 @@ class Lists extends Component{
     })
   }
 
+  _displayTasks(id){
+    clientAuth.getTasks(id).then(res =>{
+      console.log(res);
+    })
+  }
+
+  _showList(id){
+    clientAuth.showList(id).then(res =>{
+      console.log(res.data.tasks);
+    })
+  }
+
   render(){
     const lists = this.state.lists.map((list, i)=>{
       return (
         <div key={i} className='theLists'>
           <h3 className='listH3'>{list.title}</h3>
-          <button className='listBtn' onClick={this._deleteList.bind(this, list._id)}>X</button>
+          <button className='listBtn' onClick={this._deleteList.bind(this, list._id)}>Finished</button>
+          <button className='taskList' onClick={this._showList.bind(this, list._id)}>Tasks</button>
         </div>
       )
     })

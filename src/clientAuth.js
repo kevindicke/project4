@@ -87,36 +87,36 @@ const clientAuth = {
     })
   },
 
-  getTasks: ()=>{
+  getTasks: (id)=>{
     return axios({
-      url: 'api/lists/:id/tasks',
+      url: `api/lists/${id}/tasks`,
       method: 'get'
     })
   },
 
-  addTask: (newTask)=>{
+  addTask: (id, newTask)=>{
     return axios({
-      url: '/api/lists/:id/tasks',
+      url: `/api/lists/${id}/tasks`,
       method: 'post',
       data: newTask
     })
   },
-  showTask: (taskId)=>{
+  showTask: (id, taskId)=>{
     return axios({
-      url: `/api/lists/:id/tasks/${taskId}`,
+      url: `/api/lists/${id}/tasks/${taskId}`,
       method: 'get'
     })
   },
 
-  deleteTask: (taskId)=> {
+  deleteTask: (id, taskId)=> {
     return axios({
-      url: `/api/lists/:id/tasks/${taskId}`,
+      url: `/api/lists/${id}/tasks/${taskId}`,
       method: 'delete'
     })
   },
-  toggleCompleted: (taskId)=> {
+  toggleCompleted: (id, taskId)=> {
     return axios({
-      url: `/api/lists/:id/tasks/${taskId}`,
+      url: `/api/lists/${id}/tasks/${taskId}`,
       method: 'patch'
     })
   }
