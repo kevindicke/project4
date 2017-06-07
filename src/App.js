@@ -27,7 +27,6 @@ class App extends Component {
 
   _signUp(newUser) {
     clientAuth.signUp(newUser).then((data)=>{
-      console.log(data);
       this.setState({
         view: 'login'
       })
@@ -45,7 +44,6 @@ class App extends Component {
   }
   _logOut(){
     clientAuth.logOut().then(message =>{
-      console.log(message);
       this.setState({
         currentUser: null,
         loggedIn: false,
@@ -61,7 +59,6 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.currentUser)
     return (
       <div className="App">
         <Header

@@ -69,7 +69,6 @@ class Tasks extends Component{
         </li>
       )
     })
-    console.log(this.state.tasks);
     return(
       <div className='tasks'>
         <form onSubmit={this._addTask.bind(this)}>

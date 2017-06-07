@@ -49,7 +49,7 @@ const clientAuth = {
       resolve('bye.')
     })
   },
-
+////////////////////////////////////////////////////////////////
   getLists: ()=>{
     return axios({
       url: 'api/lists',
@@ -86,7 +86,7 @@ const clientAuth = {
       data: editData
     })
   },
-
+//////////////////////////////////////////////////////
   getTasks: (id)=>{
     return axios({
       url: `api/lists/${id}/tasks`,
@@ -121,6 +121,7 @@ const clientAuth = {
     })
   }
 }
+//////////////////////////////////////////////////////
 clientAuth.setTokenHeader()
 
 export default clientAuth
