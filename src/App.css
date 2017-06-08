@@ -29,9 +29,6 @@
   margin-left: 100px;
   margin-right: 100px;
 }
-.logo{
-  border-radius: 100%;
-}
 /*
 .listH3{
   display: inline-block;
@@ -83,7 +80,7 @@ button{
   border-radius: 7px;
 }
 .check{
-  width: 900px;
-  height: 900px;
-
+  width: 800px;
+  height: 800px;
+  margin-left: 25%;
 }
