@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import clientAuth from './clientAuth'
-import Tasks from './Tasks'
 import Header from './Header'
 import Body from './Body'
 
@@ -38,7 +37,7 @@ class App extends Component {
       this.setState({
         currentUser: user,
         loggedIn: true,
-        view: 'home'
+        view: ''
       })
     })
   }
@@ -68,10 +67,9 @@ class App extends Component {
         />
 
         {{
-          home: <h1></h1>,
+          home: <img className='check' src='https://maxcdn.icons8.com/Share/icon/ios7/User_Interface//checked_checkbox1600.png' alt='check'/>,
           login: <LogIn onLogin={this._logIn.bind(this)} />,
           signup: <SignUp onSignup={this._signUp.bind(this)} />
-          //lists: <Lists />
         }[this.state.view]}
         <Body currentUser={this.state.currentUser}/>
       </div>

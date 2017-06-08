@@ -10,7 +10,7 @@ class Body extends Component {
           <div>
             <img src={currentUser.image} alt='User Pic' className='profilePic'/>
             <h3 className='userName'>{
-              currentUser ? currentUser.name + "'s List" : 'Welcome to ToGet'
+              currentUser ? currentUser.name + "'s ToGet" : 'Welcome to ToGet'
             }</h3>
              {currentUser ? <Lists /> : <h4>Log in to see tasks</h4>}
           </div>

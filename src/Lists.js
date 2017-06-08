@@ -112,7 +112,7 @@ _toggleCompleted(taskId){
           <h3>{task.body}</h3>
           <button onClick={this._deleteTask.bind(this, task._id)}>X</button>
           <button onClick={this._toggleCompleted.bind(this, task._id)}>
-            Mark {task.completed ? 'Complete' : 'Incomplete'}
+            {task.completed ? 'Done' : 'Not Done'}
           </button>
         </div>
       )
