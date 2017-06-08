@@ -27,7 +27,9 @@ class App extends Component {
   _signUp(newUser) {
     clientAuth.signUp(newUser).then((data)=>{
       this.setState({
-        view: 'login'
+        currentUser: data,
+        loggedIn: true,
+        view: ''
       })
     })
   }
