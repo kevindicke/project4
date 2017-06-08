@@ -2,7 +2,7 @@ import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 const dotenv = require('dotenv').load({silent: true})
 
-axios.defaults.baseURL = process.env.BASE_URL || 'http://localhost:3001'
+axios.defaults.baseURL = process.env.BASE_URL || 'https://toget.herokuapp.com'
 
 const clientAuth = {
 
